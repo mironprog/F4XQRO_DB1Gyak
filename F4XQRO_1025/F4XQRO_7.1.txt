@@ -1,0 +1,7 @@
+KÖNYV (isbn C(20) PK, cim C(40), targy C(30), ar INT)
+
+SELECT cim FROM KÖNYV;
+SELECT * FROM KÖNYV WHERE ar > 2000;
+SELECT * FROM KÖNYV WHERE ar < 1000;
+SELECT targy FROM KÖNYV;
+SELECT cim, ar FROM Könyv WHERE targy='AB'

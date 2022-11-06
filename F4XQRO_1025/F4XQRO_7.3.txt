@@ -1,0 +1,11 @@
+CREATE TABLE gyarto (adoszam INT PRIMARY KEY,
+nev VARCHAR2(30) NOT NULL, varos VARCHAR2(200));
+
+CREATE TABLE termek (tkod INT PRIMARY KEY,
+nev VARCHAR2(50) NOT NULL, ear INT CHECK (EAR > 0),
+kategória CHAR(10), gyarto INT REFERENCES GYARTO);
+
+SELECT nev, tkod FROM termek WHERE kategória='X';
+SELECT t.nev, gy,nev FROM termek t INNER JOIN gyarto gy ON t.gyarto = gy.adoszam;
+SELECT nev FROM termek WHERE gyarto IN (SELECT nev FROM gyarto WHERE nev = ‘X’;
+SELECT (COUNT*) db FROM termek WHERE ear > Y;

@@ -1,0 +1,9 @@
+KÖNYV (isbn C(20) PK, cim C(40), targy C(30), ar INT)
+
+SELECT isbn (COUNT*) db FROM KÖNYV;
+SELECT avg(ar) FROM KÖNYV;
+SELECT ar FROM KÖNYV WHERE ar = (SELECT min(ar) FROM KÖNYV);
+SELECT (COUNT*) db FROM KÖNYV WHERE tipus='AB';
+SELECT ar FROM KÖNYV WHERE ar= (SELECT max(ar) FROM KÖNYV) AND tipus='AB';
+SELECT cim FROM KÖNYV WHERE ar > (SELECT avg(ar) FROM KÖNYV);
+SELECT (COUNT*) db FROM KÖNYV WHERE ar > (SELECT avg(ar) FROM KÖNYV);
