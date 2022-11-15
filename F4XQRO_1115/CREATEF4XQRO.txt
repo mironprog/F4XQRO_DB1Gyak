@@ -1,0 +1,4 @@
+CREATE TABLE OKTATÓ(neptunkód CHAR(10) PRIMARY KEY, nev CHAR(20), tanszék CHAR(20);
+CREATE TABLE TÁRGY(kód CHAR(20) PRIMARY KEY, kredit INT(5), megnevezés CHAR(15), FOREIGN KEY(oktat) REFERENCES (oktató);
+CREATE TABLE HALLGATÓ(neptunkód CHAR(10), név CHAR(20), tankör CHAR(10), szül.d DATE, életkor INT(5), irszám INT(4), város CHAR(20), utca CHAR(20), hsz INT(3));
+CREATE TABLE HALLGAT(félév INT(1), vizsgajegy INT(1), FOREIGN KEY (hallgató) REFERENCES (Hallgató), FOREIGN KEY (tárgy) REFEERENCES (Tárgy));

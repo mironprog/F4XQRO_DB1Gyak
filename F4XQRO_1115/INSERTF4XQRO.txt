@@ -1,0 +1,9 @@
+INSERT INTO Oktató VALUES("G5MJ4C", "Kiss Árpád", "IAK");
+INSERT INTO Oktató VALUES("F3X9GQ", "Nagy László", "IAL");
+INSERT INTO Oktató VALUES("V78HAQ", "Kormos László", "MAN");
+
+INSERT INTO Tárgy VALUES("GEMAK121-B", 5, "Adatstruktúrák");
+INSERT INTO Tárgy VALUES("ETTES2GE1", 0, "TESTNEVELÉS");
+INSERT INTO Tárgy VALUES("GEMAN161-B", 5, "Analízis"); 
+
+INSERT INTO Hallgató VALUES
