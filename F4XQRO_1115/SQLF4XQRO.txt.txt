@@ -1,0 +1,44 @@
+1. Kérdezze le az oktatók nevét!
+SELECT nev FROM oktató;
+
+2. Kérdezze le az oktatók és tantárgyaik nevét!
+SELECT oktató.nev, tárgy.megnevezés FROM oktató,tárgy;
+
+3. Kérdezze le az oktatók és tantárgyaik nevét (azok az oktatók is, akiknek nincs tárgya)!
+SELECT oktató.nev, targy.megnevezés FROM oktató, tárgy LEFT JOIN ON oktató.nev=targy.targy.oktat;
+
+4. Kérdezze le az ÁIF tanszéken dolgozó oktatók nevét és tárgyaik címét!
+SELECT nev,megnevezés FROM oktató,tárgy INNER JOIN oktató, tárgy ON oktató.tanszék="ÁIF";
+
+5. Kérdezze le az átlagos kreditpontszámot!
+SELECT avg(kredit) FROM Tárgy;
+
+6. Kérdezze le az ÁIF tanszéken dolgozó oktatók létszámát!
+SELECT COUNT(*) FROM oktató WHERE tanszék="ÁIF";
+
+7. Kérdezze le a legnagyobb kreditpontszámú tárgy(ak) címét!
+SELECT megnevezes FROM tárgy ORDER BY kredit;
+
+8. Kérdezze le azokat az oktatókat, akiknek nincs tárgya!
+
+
+9. Kérdezze le azokat azok a hallgatókat, akik a 2021/2022 tanév II. félévében nem vettek
+fel tárgyat!
+
+
+10. Kérdezze le a hallgatók születési dátumát!
+SELECT szül.date FROM hallgató;
+
+11. Kérdezze le a tanszékenként az oktatók létszáma!
+SELECT COUNT(*) FROM oktató GROUP BY kredit;
+
+12. Kérdezze le azokat az oktatók, akiknek 2-nél több tárgyuk van!
+
+
+13. Kérdezze le az átlagnál alacsonyabb kreditpontú tárgyak oktatóinak nevét!
+
+
+14. Kérdezze le a legtöbb tárgyat tanító oktató nevét!
+
+
+15. Kérdezze le kik azok a hallgatók, akik minden tárgyat felvettek!
