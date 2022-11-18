@@ -6,4 +6,6 @@ INSERT INTO Tárgy VALUES("GEMAK121-B", 5, "Adatstruktúrák");
 INSERT INTO Tárgy VALUES("ETTES2GE1", 0, "TESTNEVELÉS");
 INSERT INTO Tárgy VALUES("GEMAN161-B", 5, "Analízis"); 
 
-INSERT INTO Hallgató VALUES
+INSERT INTO Hallgató VALUES("HF65JH", "Tóth Árpád", "GÉIK", 2000, 22, 3304, "Eger", "széchenyi", 5);
+INSERT INTO Hallgató VALUES("HPKFMC", "Teller Ede", "GÉIK", 2002, 20, 4125, "Debrecen", "Sétáló", 13);
+INSERT INTO Hallgató VALUES("K2CHUA", "Radnóti Miklós", "GÉIK", 1999, 23, 2351, "Anarcs", "Cinege", 20);
