@@ -1,0 +1,13 @@
+CREATE TABLE Olvasoikartya(kartyaszam INT(5) PRIMARY KEY, ar INT(10), reg_datum DATE, lejar_datum DATE);
+
+CREATE TABLE Olvaso(O_ID INT(5) PRIMARY KEY, vezeteknev CHAR(10), keresztnev CHAR(10), telefonszam INT(7), email CHAR(10);
+
+CREATE TABLE Konyv(K_kod INT(5), könyvszam INT(5) PRIMARY KEY, ar INT(10), műfaj CHAR(20), cím CHAR(20), FOREIGN KEY (K_kód) REFERENCES Konyvtar(K_kod));
+
+CREATE TABLE Konyvtar(K_kod INT(5) PRIMARY KEY, K_nev CHAR(20), irsz INT(4), varos CHAR(20), utca CHAR(20));
+
+CREATE TABLE Szerzo(Sz_ID INT(5), nev CHAR(20), kor INT(3));
+
+CREATE TABLE Kivesz(konyvszam INT(5), O_ID(INT(5), Kiv_datum DATE, Vissza_datum DATE,FOREIGN KEY (konyvszam) REFERENCES Konyv(konyvszam), FOREIGN KEY (O_ID) REFERENCES Olvaso(O_ID));
+
+CREATE TABLE Ir(könyvszam INT(5), Sz_ID INT(5), FOREIGN KEY (könyvszam) REFERENCES Konyv(könyvszam), FOREIGN KEY (Sz_ID) REFERENCES Szerzo(Sz_ID));
