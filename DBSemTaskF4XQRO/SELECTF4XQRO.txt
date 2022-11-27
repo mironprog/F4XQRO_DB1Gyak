@@ -1,0 +1,33 @@
+1.) Kérdezze le az összes olvasó nevét és e-mail címét!
+SELECT vezeteknev,keresztnev, email FROM Olvaso;
+
+2.) Kérdezze le az összes könyv címét és árát!
+SELECT cim, ar FROM Konyv;
+
+3.)Gyűjtsük ki azoknak az olvasóknak az adatait akiknek 20-al kezdődik a telefonszámuk!
+SELECT  O_ID, vezeteknev, keresztnev, telefonszam, email FROM Olvaso WHERE telefonszam LIKE '0620%'
+
+4.)Számolja meg az összes olvasót!
+SELECT COUNT(O_ID) FROM Olvaso;
+
+5.)Listázzuk ki melyik műfajból hány könyv található!
+SELECT COUNT(könyvszam), műfaj FROM Konyv GROUP BY műfaj;
+
+6.)Állítsuk ABC sorrendbe a könyveket címük alapján!
+SELECT * FROM Konyv ORDER BY cím ASC;
+
+7.)Keressük meg a legidősebb szerző nevét!
+SELECT MAX(kor),nev AS Legidosebbszerzo FROM Szerzo GROUP BY nev;
+
+8.)Listázzuk ki az átlagárnál drágább könyveket!
+SELECT nev FROM Konyv WHERE ar > (SELECT AVG(ar) FROM Konyv);
+
+9.)Listázzuk ki az átlagkornál idősebb szerzőket!
+SELECT nev FROM Szerzo WHERE kor > (SELECT AVG(kor) FROM Szerzo);
+
+10.)Írjuk ki a könyvek nevét és hogy drágák(>600) vagy olcsók(<600)! 
+SELECT cím, CASE WHEN ar > 600 THEN 'drága' ELSE 'olcsó' END arkategoria FROM Konyv;
+
+11.)Keressük ki a legdrágább könyv nevét és műfaját!
+SELECT cím, műfaj FROM Konyv WHERE ar = (SELECT MAX(ar) FROM Konyv);
+

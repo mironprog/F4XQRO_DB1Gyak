@@ -1,0 +1,24 @@
+INSERT INTO Olvaso VALUES(1, "Henriette", "Japeth", 0630343 "Henriette.Japeth@yopmail.com");
+INSERT INTO Olvaso VALUES(2, "Brooks", "Ortrude", 0630784, "Brooks.Ortrude@yopmail.com");
+INSERT INTO Olvaso VALUES(3, "Helena", "Daegal", 0670491, "Helena.Daegal@yopmail.com");
+INSERT INTO Olvaso VALUES(4, "Pierette", "Verger", 0620673, "Pierette.Verger@yopmail.com");
+INSERT INTO Olvaso VALUES(5, "Brooks", "Ogren", 0620569, "Brooks.Ogren@yopmail.com");
+
+
+INSERT INTO Konyv VALUES(33445, 9321, 336, "Krimi", "Arulas");
+INSERT INTO Konyv VALUES(33445, 9268, 799, "Napló", "Hullamszerelem");
+INSERT INTO Konyv VALUES(33445, 3136, 654, "Fantasy", "Vigyázat!");
+INSERT INTO Konyv VALUES(33445, 9224, 921, "Fantasy", "Farkasverem");
+INSERT INTO Konyv VALUES(33445, 6782, 589, "Horror", "Elrabolva");
+
+
+INSERT INTO Konyvtar VALUES(33445, "Brody Sandor", 2104, "Szeged", "Setalo utca");
+
+INSERT INTO Szerzo VALUES(1, "Berzeviczy Gergely", 50);
+INSERT INTO Szerzo VALUES(2, "Esze Dóra", 34);
+INSERT INTO Szerzo VALUES(3, "Gyurkovics Tibor", 28);
+INSERT INTO Szerzo VALUES(4, "Karafiáth Orsolya", 41);
+INSERT INTO Szerzo VALUES(5, "Tóth Eszter", 39);
+
+
+
